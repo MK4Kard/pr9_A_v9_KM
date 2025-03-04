@@ -17,7 +17,5 @@ class Further(var typeWag: Int, var tickSale: Int, empNumber: String, empPoint: 
         println("Дальний поезд с номером ${number}, с разновидностью вагонов: ${typeWag}")
         println("Пункт назначения: ${point}")
         println("Цена 1 билета: ${price}, билеты появляются за ${tickSale} дней")
-        println("Дней в пути: ${days}")
-        println("Время прибытия - ${timeArr}; Время стоянки - ${timePark}")
     }
 }

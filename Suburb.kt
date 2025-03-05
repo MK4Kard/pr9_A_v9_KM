@@ -12,6 +12,14 @@ class Suburb (var stopCount: Int, var wagCount: Int, empNumber: String, empPoint
             this.price = price
         }
     }
+    public fun Speed(speed: Double) {
+        if (speed < 45 || speed > 65){
+            println("Скорость не входит в диапазон")
+        }
+        else {
+            println("Скорость поезда: ${speed}")
+        }
+    }
     override fun path() {
         println("Пригородный поезд с номером ${number}, с количеством вагонов: ${wagCount}")
         println("Пункт назначения: ${point}, количество отсановок ${stopCount}")

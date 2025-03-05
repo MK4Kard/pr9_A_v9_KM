@@ -1,15 +1,6 @@
 package Train
 open class Drive (var number: String, var point: String, var days: Int, var timeArr: Int, var timePark: Int){
 
-    open fun Speed(speed: Double) {
-        if (speed < 45 || speed > 65){
-            println("Скорость не входит в диапазон")
-        }
-        else {
-            println("Скорость поезда: ${speed}")
-        }
-    }
-
     open fun path() {
         println("Поезд с номером $number\n" +
                 "Пункт назначения: $point")

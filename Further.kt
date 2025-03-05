@@ -12,7 +12,14 @@ class Further(var typeWag: Int, var tickSale: Int, empNumber: String, empPoint: 
             this.price = price
         }
     }
-
+    public fun Speed(speed: Double) {
+        if (speed < 45 || speed > 65){
+            println("Скорость не входит в диапазон")
+        }
+        else {
+            println("Скорость поезда: ${speed}")
+        }
+    }
     override fun path() {
         println("Дальний поезд с номером ${number}, с разновидностью вагонов: ${typeWag}")
         println("Пункт назначения: ${point}")

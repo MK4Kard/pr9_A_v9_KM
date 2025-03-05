@@ -18,7 +18,6 @@ fun main() {
     L4.path()
     var T10 = NewTrain("T-10", "Ростов", 3, 23, 9)
     println("Введите скорость поезда")
-    T10.Speed(readln()!!.toDouble())
     T10.Info()
     T10.path()
 }
